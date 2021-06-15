@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="<meta name="viewport" content="width=device-width">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload crop &amp; save</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css'><link rel="stylesheet" href="./style.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+
+<main class="page">
+	<div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+	<h2> Choose image &amp; upload to cloud</h2><br><br>
+	<!-- <a id="imageurl" href="" target="_blank"></a>  -->
+	<!-- input file -->
+	<div class="box">
+		<input type="file" id="file-input" accept="image/*">
+		<!-- <h3>url</h3> -->
+	</div>
+	
+	<!-- leftbox -->
+	<div class="box-2">
+		<div class="result"></div>
+	</div>
+	<!--rightbox-->
+	<div class="box-2 img-result hide">
+		<!-- result of crop -->
+		<img class="cropped" src="" alt="" change="called">
+	</div>
+	<!-- input file -->
+	<div class="box">
+		<div class="options hide">
+		
+		</div>
+		<!-- save btn -->
+		<button class="btn save hide">SAVE & UPLOAD</button>
+		<a id="imageurl" href="" target="_blank"></a> 
+		
+	</div>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js'></script><script  src="./script.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
